@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Statistika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shopstyle.css">
+    <link rel="icon" type="image/png" href="/Tech_Store/foto/service.png">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">TechStore</div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Baş sahypa</a></li>
+                    <li><a href="product.html">Harytlar</a></li>
+                    <li><a href="stats.html" class="active">Statistika</a></li>
+                    <li><a href="contact.html">Habarlaşmak</a></li>
+                    <li><a href="about.html">Biz hakda</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="stats-section">
+        <div class="container">
+            <h1 class="section-title">Statistikalarymyz</h1>
+            <p class="section-subtitle">Söwdanyňyz we müşderi hereketleri barada aýratyn statistikalar</p>
+
+            <div class="stats-cards">
+                <div class="stat-card fade-in">
+                    <span class="stat-number" data-target="420">0</span>
+                    <span class="stat-label">Jemi Harytlar</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <span class="stat-number" data-target="470">0</span>
+                    <span class="stat-label">Aktiw Müşderiler</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <span class="stat-number" data-target="85">0</span>
+                    <span class="stat-label">Satyş Ýygylygy (%)</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <span class="stat-number" data-target="45">0</span>
+                    <span class="stat-label">Öňe Çykýan Harytlar</span>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <!-- Bar Chart -->
+                <div class="chart-card">
+                    <h3 class="chart-title">Harytlaryň Kategoriýa Bölümi</h3>
+                    <div class="bar-chart-container">
+                        <div class="bar-chart">
+                            <div class="bar" style="--bar-height:80%" data-value="80%">
+                                <div class="bar-label">Noutbuklar</div>
+                            </div>
+                            <div class="bar" style="--bar-height:60%" data-value="60%">
+                                <div class="bar-label">Monitorlar</div>
+                            </div>
+                            <div class="bar" style="--bar-height:45%" data-value="45%">
+                                <div class="bar-label">Nauşnikler</div>
+                            </div>
+                            <div class="bar" style="--bar-height:30%" data-value="30%">
+                                <div class="bar-label">Aksesuarlar</div>
+                            </div>
+                        </div>
+                        <div class="bar-legend">
+                            <div class="bar-legend-item">
+                                <div class="bar-legend-color"></div>
+                                <span class="bar-legend-text">Noutbuklar - 80%</span>
+                            </div>
+                            <div class="bar-legend-item">
+                                <div class="bar-legend-color"></div>
+                                <span class="bar-legend-text">Monitorlar - 60%</span>
+                            </div>
+                            <div class="bar-legend-item">
+                                <div class="bar-legend-color"></div>
+                                <span class="bar-legend-text">Nauşnikler - 45%</span>
+                            </div>
+                            <div class="bar-legend-item">
+                                <div class="bar-legend-color"></div>
+                                <span class="bar-legend-text">Aksesuarlar - 30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pie Chart -->
+                <div class="chart-card">
+                    <h3 class="chart-title">Söwda Bölümi (%)</h3>
+                    <div class="pie-chart-container">
+                        <div class="pie-chart-wrapper">
+                            <div class="pie-chart"></div>
+                        </div>
+                        <div class="pie-legend">
+                            <div class="legend-item">
+                                <div class="legend-color primary"></div>
+                                <span class="legend-text">Noutbuklar</span>
+                                <span class="legend-percentage">40%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color secondary"></div>
+                                <span class="legend-text">Monitorlar</span>
+                                <span class="legend-percentage">25%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color accent"></div>
+                                <span class="legend-text">Nauşnikler</span>
+                                <span class="legend-percentage">20%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color muted"></div>
+                                <span class="legend-text">Beýlekiler</span>
+                                <span class="legend-percentage">15%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>Created by <span>Guwançmyrat Annaýew</span></p>
+            <div class="social-icons">
+                <a href="https://t.me/guga_dev" target="_blank"><img src="foto/telegram.png" alt="Telegram"></a>
+            <a href="https://www.instagram.com/g.a_10_08?igsh=bXdxemVvcnM5aWdt" target="_blank"><img src="foto/instagram.png"
+                    alt="Instagram"></a>
+            <a href="https://facebook.com/yourfacebook" target="_blank"><img src="foto/facebook.png" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/@guga_379?_r=1&_t=ZS-92msCisjLcK" target="_blank"><img src="foto/tik-tok.png" alt="TikTok"></a>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="stats.js"></script>
+</body>
+</html>
